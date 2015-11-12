@@ -2,43 +2,43 @@
 <html>
 	<head>
 		<title>{{ title }}</title>
-		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
 	</head>
 	<body>
 		<div class="container">
             
             <!-- navigation -->
-			<nav>
-				<div class="content">
-					<a href="/" class="logo">
-						<img src="/images/logo.png" alt="FastDelivery">
-					</a>
+		  <nav>
+                <div class="content">
+                    <a href="/" class="logo">
+                        <img src="/images/record.png" width = "70px"alt="record">
+                    </a>
                     <ul class="menu">
                         <li><a href="/">Home</a></li>
                         <li><a href="/blog">Blog</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/careers">Careers</a></li>
-                        <li><a href="/contacts">Contacts</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
                     </ul>
                     <br class="clear" />
-				</div>
-			</nav>
+                </div>
+            </nav>
             
             <!-- home page -->
             <div class="home">
-                <h1>Fast As Hell <small>The fastest-growing company of 2012</small></h1>
+                <h1>   L I S T E N U P</h1>
+                <h3> A Music Review Blog</h3>
                 <div class="teaser">
                     <div class="content">
-                        <img src="/images/home-teaser-image.jpg" alt="" class="home-teaser-image" />
                         <h2>{{bannerTitle}}</h2>
                         <p>{{bannerText}}</p>
-                        <div class="home-teaser-icons">
+<!--                         <div class="home-teaser-icons">
                             <a href="#"><img src="/images/home-teaser-icon1.png" alt=""/></a>
                             <a href="#"><img src="/images/home-teaser-icon2.png" alt=""/></a>
                             <a href="#"><img src="/images/home-teaser-icon3.png" alt=""/></a>
                             <a href="#"><img src="/images/home-teaser-icon4.png" alt=""/></a>
                             <br class="clear" />
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="blog-articles">
@@ -52,7 +52,7 @@
             <!-- footer -->
             <div class="footer">
                 <div class="content">
-                    fast delivery &copy; 2013
+                    SheCoderDesigns &copy; 2015
                 </div>
             </div>
             

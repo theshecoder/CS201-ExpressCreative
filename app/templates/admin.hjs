@@ -6,7 +6,7 @@
 	</head>
 	<body class="admin">
 		<div class="container">
-			<h1>{{content}}</h1>
+			<h2>{{content}}</h2>
 			<hr />
 			<div class="left list-column">
 				{{{list}}}

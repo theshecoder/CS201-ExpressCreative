@@ -8,21 +8,20 @@
 		<div class="container">
             
             <!-- navigation -->
-			<nav>
-				<div class="content">
-					<a href="/" class="logo">
-						<img src="/images/logo.png" alt="FastDelivery">
-					</a>
+            <nav>
+                <div class="content">
+                    <a href="/" class="logo">
+                        <img src="/images/record.png" width = "70px"alt="record">
+                    </a>
                     <ul class="menu">
                         <li><a href="/">Home</a></li>
                         <li><a href="/blog">Blog</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/careers">Careers</a></li>
-                        <li><a href="/contacts">Contacts</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
                     </ul>
                     <br class="clear" />
-				</div>
-			</nav>
+                </div>
+            </nav>
             
             <!-- inner page -->
             <div class="inner">
@@ -34,7 +33,7 @@
             <!-- footer -->
             <div class="footer">
                 <div class="content">
-                    fast delivery &copy; 2013
+                    SheCoderDesigns &copy; 2015
                 </div>
             </div>
             

@@ -9,8 +9,8 @@ module.exports = BaseController.extend({
 	username: "admin",
 	password: "admin",
 	run: function(req, res, next) {
+		console.log("inside run");
 		var self = this;
-		if(this.authorize(req)) {
 			model.setDB(req.db);
 			req.session.fastdelivery = true;
 			req.session.save();
@@ -27,14 +27,9 @@ module.exports = BaseController.extend({
 					});
 				});
 			});
-		} else {
-			var v = new View(res, 'admin-login');
-			v.render({
-				title: 'Please login'
-			});
-		}		
 	},
 	authorize: function(req) {
+		console.log("inside authorize");
 		return (
 			req.session && 
 			req.session.fastdelivery && 
@@ -84,8 +79,8 @@ module.exports = BaseController.extend({
 							text: record.text,
 							title: record.title,
 							type: '<option value="' + record.type + '">' + record.type + '</option>',
-							picture: record.picture,
-							pictureTag: record.picture != '' ? '<img class="list-picture" src="' + record.picture + '" />' : ''
+							// picture: record.picture,
+							// pictureTag: record.picture != '' ? '<img class="list-picture" src="' + record.picture + '" />' : ''
 						}, function(err, html) {
 							callback(html);
 						});
@@ -106,7 +101,7 @@ module.exports = BaseController.extend({
 				title: req.body.title,
 				text: req.body.text,
 				type: req.body.type,
-				picture: this.handleFileUpload(req),
+				// picture: this.handleFileUpload(req),
 				ID: req.body.ID
 			}
 			model[req.body.ID != '' ? 'update' : 'insert'](data, function(err, objects) {
